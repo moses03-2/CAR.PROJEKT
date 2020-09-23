@@ -117,3 +117,7 @@ footer{
 .right .content{
     margin-right: 500px;
 }
+
+.right .content .text{
+    margin: 7px;
+}
