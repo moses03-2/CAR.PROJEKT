@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+nav{
+    background: #1b1b1b;
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 160px;
+    padding-top: 15px;
+
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 9px 15px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff
+} 
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul{
+    border-top: none;
+}
+
+nav ul li:hover > ul{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+h1{
+    background-image: url(Audi3.jpg);
+    background-size: auto;
+    padding-bottom: 900px;
+    margin-top: 0px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card{
+    height: 290px;
+    width: 350px;
+    margin: 0 20px;
+    background: white;
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.card .img{
+    height: 200px;
+    width: 100%;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .top-text{
+    padding: 5px;
+}
+
+.card .top-text .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    line-height: 20px;
+}
+
+.card .bottom-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text{
+    text-align: justify;
+}
+
+footer{
+    clear: both;
+    position: relative ;
+    bottom: 0px;
+    width: 100%;
+    background: black;
+    color: white;
+    margin-top: 100px;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 30%;
+    padding: 10px 20px;
+}
+
+.box h3{
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin-top: 15px;
+} 
+
+.left .content .social a{
+    padding: 5px;
+}
+
+.left .content .social a span{
+    height: 40p;
+    width: 40px;
+    background: black;
+    color:cyan;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover{
+    background: blueviolet;
+}
+
+.center .content .place{
+    margin-top: 1px;
+}
+
+.center .content .place span{
+    margin: 6px;
+}
+
+.right .content{
+    margin-right: 500px;
+}
+
