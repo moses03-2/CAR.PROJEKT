@@ -105,19 +105,3 @@ footer{
 .left .content .social a span:hover{
     background: blueviolet;
 }
-
-.center .content .place{
-    margin-top: 1px;
-}
-
-.center .content .place span{
-    margin: 6px;
-}
-
-.right .content{
-    margin-right: 500px;
-}
-
-.right .content .text{
-    margin: 7px;
-}
