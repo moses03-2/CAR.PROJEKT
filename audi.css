@@ -181,6 +181,7 @@ h1{
 }
 
 .container{
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -191,7 +192,7 @@ h1{
 
 .card{
     height: 290px;
-    width: 350px;
+    max-width: 350px;
     margin: 0 20px;
     background: white;
     transition: 0.4s;
@@ -247,6 +248,18 @@ h1{
 
 .card .bottom-text .text{
     text-align: justify;
+}
+
+@media screen and (max-width: 978px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 700px;
+        margin: 20px 0;
+    }
 }
 
 footer{
