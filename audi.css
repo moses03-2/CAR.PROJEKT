@@ -5,7 +5,7 @@ body {
 
 header{
     font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: #1b1b1b;
     padding: 8px;
     color: white;
     text-align: center;
@@ -176,6 +176,7 @@ nav ul ul ul li{
 h1{
     background-image: url(Audi3.jpg);
     background-size: auto;
+    
     padding-bottom: 900px;
     margin-top: 0px;
 }
