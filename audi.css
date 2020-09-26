@@ -118,6 +118,7 @@ nav ul ul ul li{
     nav .logo{
         padding-left: 30px;
         width: 100%;
+        text-align: center;
     }
 
     nav ul li, nav ul ul li{

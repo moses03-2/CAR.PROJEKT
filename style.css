@@ -1,35 +1,65 @@
-body {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: black;
-    padding: 8px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+h1{
+    color: white
+}
+
+.nav{
+    display: flex;
+    
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 70px;
     color: white;
-    text-align: center;
-    font-size: xx-large;
+    transition: 0.3s;
 }
 
-nav{
-    margin-bottom: 20px;
-}
-
-nav > a{
-    margin-right: 40px;
-    background-color: black;
-    color: white;
+.nav ul li a:hover{
+    
+    color: blueviolet;
     text-decoration: none; 
-     transition: 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 0 50px blueviolet;
 }
 
-nav > a:hover{
-    margin-right: 40px;
-    background-color: white;
-    color: black;
-    text-decoration: none; 
+@media (max-width: 725px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading{
+        padding-bottom: 25px;
+    }
+
+    .nav ul li a{
+        text-align: center;
+    }
 }
+
 
 h2{
    
@@ -41,11 +71,14 @@ h2{
     margin-top: 0;
 }
 
-h4{
-    background-image: url(Ratta.jpg);
+.container1{
+    height: 100%;
+    background: url(Ratta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    padding-bottom: 800px;
-    margin-top: 0;
+    background-attachment: scroll;
+    padding-bottom: 900px;
 }
 main{
     font-family: 'Times New Roman', Times, serif;
