@@ -105,7 +105,7 @@ nav ul ul ul li{
   left: 150px;
 }
 
-.show, .icon, input{
+.show, .icon, nav input{
     display: none;
 }
 
@@ -309,7 +309,7 @@ footer{
     content: '';
     height: 2px;
     width: 15%;
-    background: #f12020;
+    background: cyan;
     top: -10px;
 }
 
@@ -405,7 +405,7 @@ footer{
     border: none;
     outline: none;
     color: white;
-    background: #f12020;
+    background: cyan;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
@@ -427,7 +427,7 @@ footer{
 }
 
 .bottom center a{
-    color: #f12020;
+    color: cyan;
     text-decoration: none;
 }
 
