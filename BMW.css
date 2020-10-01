@@ -5,7 +5,7 @@
 }
 
 header{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather Sans', sans-serif;
     background-color: #ff8600;
     padding: 8px;
     color: white;
@@ -186,6 +186,7 @@ nav ul ul ul li{
 }
 
 .container{
+    font-family: 'Cormorant Garamond', serif;
     padding: 0 40px;
     display: flex;
     align-items: center;
@@ -268,6 +269,7 @@ nav ul ul ul li{
 }
 
 footer{
+    font-family: 'Rokkitt', serif;
     position: relative;
     bottom: 0px;
     width: 100%;
