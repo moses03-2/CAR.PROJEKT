@@ -5,7 +5,7 @@
 }
 
 header{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Stardos Stencil', cursive;
     background-color: #1b1b1b;
     padding: 8px;
     color: white;
@@ -186,6 +186,7 @@ nav ul ul ul li{
 }
 
 .container{
+    font-family: 'Charm', cursive;
     padding: 0 40px;
     display: flex;
     align-items: center;
@@ -268,6 +269,7 @@ nav ul ul ul li{
 }
 
 footer{
+    font-family: 'Kite One', sans-serif;
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -371,7 +373,7 @@ footer{
 .right form .text{
     font-size: 1.0625rem;
     margin-bottom: 2px;
-    color: #656565;
+    color: white;
 }
 
 .right form .msg{
@@ -381,14 +383,14 @@ footer{
 .right form input, .right form textarea{
     width: 100%;
     font-size: 1.0625rem;
-    background: #151515;
+    background: white;
     padding-left: 10px;
     border: 1px solid #222222;
 }
 
 .right form input:focus, 
 .right form textarea:focus{
-    outline-color: #3498db;
+    outline-color: cyan;
 }
 
 .right form input{
@@ -423,7 +425,7 @@ footer{
 }
 
 .bottom center span{
-    color: #656565;
+    color: white;
 }
 
 .bottom center a{

@@ -9,6 +9,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    font-family: 'Syne', sans-serif;
 }
 
 h1{
@@ -62,8 +63,7 @@ h1{
 
 
 h2{
-   
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cinzel', serif;
     text-align: center;
     font-size: 1cm;
     color:black; 
@@ -81,7 +81,7 @@ h2{
     padding-bottom: 900px;
 }
 main{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cinzel', serif;
     text-align: center;
     font-size: large;
     padding: 100px;
@@ -90,6 +90,7 @@ main{
 }
 
 footer{
+    font-family: 'Cormorant SC', serif;
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -131,7 +132,7 @@ footer{
     content: '';
     height: 2px;
     width: 15%;
-    background: cyan;
+    background: blueviolet;
     top: -10px;
 }
 
@@ -151,7 +152,7 @@ footer{
     height: 40px;
     width: 40px;
     background: black;
-    color:cyan;
+    color:blueviolet;
     line-height: 40px;
     text-align: center;
     font-size: 18px;
@@ -193,7 +194,7 @@ footer{
 .right form .text{
     font-size: 1.0625rem;
     margin-bottom: 2px;
-    color: #656565;
+    color: white;
 }
 
 .right form .msg{
@@ -210,7 +211,7 @@ footer{
 
 .right form input:focus, 
 .right form textarea:focus{
-    outline-color: #3498db;
+    outline-color: blueviolet;
 }
 
 .right form input{
@@ -227,7 +228,7 @@ footer{
     border: none;
     outline: none;
     color: white;
-    background: #f12020;
+    background: blueviolet;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
@@ -245,11 +246,11 @@ footer{
 }
 
 .bottom center span{
-    color: #656565;
+    color: white;
 }
 
 .bottom center a{
-    color: #f12020;
+    color: blueviolet;
     text-decoration: none;
 }
 
