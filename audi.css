@@ -168,7 +168,7 @@ header .show, .icon, nav input{
     header .show + a, ul{
         display: none;
     }
-    [id^=btn]:checked + ul{
+    header [id^=btn]:checked + ul{
         display: block;
     }
 }
