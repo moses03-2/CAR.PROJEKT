@@ -13,17 +13,14 @@ header{
     font-size: xx-large;
 }
 
-nav{
-    background: #1b1b1b;
-}
 
-nav:after{
+header nav:after{
     content: '';
     clear: both;
     display: table;
 }
 
-nav .logo{
+header nav .logo{
     float: left;
     color: white;
     font-size: 40px;
@@ -34,20 +31,20 @@ nav .logo{
 
 }
 
-nav ul{
+header nav ul{
     float: right;
     list-style: none;
     margin-right: 40px;
     position: relative;
 }
 
-nav ul li{
+header nav ul li{
     display: inline-block;
     background: #1b1b1b;
     margin: 0 5px;
 }
 
-nav ul li a{
+header nav ul li a{
     color: white;
     text-decoration: none;
     line-height: 70px;
@@ -55,19 +52,19 @@ nav ul li a{
     padding: 9px 15px;
 }
 
-nav ul li a:hover{
+header nav ul li a:hover{
     color: cyan;
     border-radius: 5px;
     box-shadow: 0 0 5px #33ffff,
                 0 0 5px #66ffff
 } 
 
-nav ul ul li a:hover{
+header nav ul ul li a:hover{
     color: cyan;
     box-shadow: none;
 }
 
-nav ul ul {
+header nav ul ul {
     position: absolute;
     top: 90px;
     border-top: 3px solid cyan;
@@ -76,17 +73,17 @@ nav ul ul {
     transition: top .3s;
 }
 
-nav ul ul ul{
+header nav ul ul ul{
     border-top: none;
 }
 
-nav ul li:hover > ul{
+header nav ul li:hover > ul{
     top: 65px;
     opacity: 1;
     visibility: visible;
 }
 
-nav ul ul li{
+header nav ul ul li{
     text-align: center;
     position: relative;
     margin: 0px;
@@ -96,37 +93,38 @@ nav ul ul li{
     border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
-nav ul ul li a{
+header nav ul ul li a{
   line-height: 50px;
 }
-nav ul ul ul li{
+
+header nav ul ul ul li{
   position: relative;
   top: -60px;
   left: 150px;
 }
 
-.show, .icon, nav input{
+header .show, .icon, nav input{
     display: none;
 }
 
 @media all and (max-width: 968px) {
-    nav ul{
+    header nav ul{
         margin-right: 0px;
         float: left;
     }
 
-    nav .logo{
+    header nav .logo{
         padding-left: 30px;
         width: 100%;
         text-align: center;
     }
 
-    nav ul li, nav ul ul li{
+    header nav ul li, nav ul ul li{
         display: block;
         width: 100%;
     }
 
-    nav ul ul{
+    header nav ul ul{
         top: 70px;
         position: static;
         border-top: none;
@@ -136,11 +134,11 @@ nav ul ul ul li{
         visibility: visible;
     }
 
-    nav ul ul ul{
+    header nav ul ul ul{
         position: static;
     }
 
-    .show{
+    header .show{
         display: block;
         color: white;
         font-size: 18px;
@@ -149,11 +147,11 @@ nav ul ul ul li{
         cursor: pointer;
     }
 
-    .show:hover{
+    header .show:hover{
         color: cyan;
     }
 
-    .icon{
+    header .icon{
         display: block;
         color: white;
         position: absolute;
@@ -163,11 +161,11 @@ nav ul ul ul li{
         cursor: pointer;
     }
 
-    nav ul li a:hover{
+    header nav ul li a:hover{
         box-shadow: none;
     }
 
-    .show + a, ul{
+    header .show + a, ul{
         display: none;
     }
     [id^=btn]:checked + ul{
@@ -185,7 +183,7 @@ nav ul ul ul li{
     padding-bottom: 900px;
 }
 
-.container{
+nav .container{
     font-family: 'Charm', cursive;
     padding: 0 40px;
     display: flex;
@@ -196,7 +194,7 @@ nav ul ul ul li{
     margin-bottom: 100px;
 }
 
-.card{
+nav .card{
     height: 290px;
     max-width: 350px;
     margin: 0 20px;
@@ -205,40 +203,40 @@ nav ul ul ul li{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.card:hover{
+nav .card:hover{
     height: 470px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
-.card .img{
+nav .card .img{
     height: 200px;
     width: 100%;
 }
 
-.card .img img{
+nav .card .img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.card .top-text{
+nav .card .top-text{
     padding: 5px;
 }
 
-.card .top-text .name{
+nav .card .top-text .name{
     font-size: 25px;
     font-weight: 600;
     color: #202020;
 }
 
-.card .top-text p{
+nav .card .top-text p{
     font-size: 20px;
     font-weight: 600;
     color: grey;
     line-height: 20px;
 }
 
-.card .bottom-text{
+nav .card .bottom-text{
     padding: 0 20px 10px 20px;
     margin-top: 5px;
     background: white;
@@ -247,22 +245,22 @@ nav ul ul ul li{
     transition: 0.1s;
 }
 
-.card:hover .bottom-text{
+nav .card:hover .bottom-text{
     opacity: 1;
     visibility: visible;
 }
 
-.card .bottom-text .text{
+nav .card .bottom-text .text{
     text-align: justify;
 }
 
 @media screen and (max-width: 978px) {
-    .container{
+    nav .container{
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .card{
+    nav .card{
         max-width: 700px;
         margin: 20px 0;
     }
